@@ -1,0 +1,216 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+ \usepackage{graphicx}
+ \usepackage{cite}
+ \usepackage{supertabular}
+ \usepackage{longtable}
+ \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+%\usepackage{xcolor}
+\usepackage{tabularx,booktabs}
+% \usepackage{pgfplots}
+%   \NewSpotColorSpace{PANTONE}
+%   \AddSpotColor{PANTONE} {PANTONE3015C} {PANTONE\SpotSpace 3015\SpotSpace C} {1 0.3 0 0.2}
+%   \SetPageColorSpace{PANTONE}%
+\usepackage{url}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage[resetlabels,labeled]{multibib}
+\newcites{S}{Reviewed studies}
+\usepackage[a4paper, total={8in, 8in}]{geometry}
+
+\title{Appendix: Full data for the manuscript 'On  Modularity of Neural Networks:  Systematic  Review and Open Challenges'}
+\date{February 2024}
+
+\begin{document}
+
+\maketitle
+
+\nociteS{S1}
+\nociteS{S2} \nociteS{S3} \nociteS{S4} \nociteS{S5} \nociteS{S6} \nociteS{S7} \nociteS{S8} \nociteS{S9} \nociteS{S10} \nociteS{S11} \nociteS{S12} \nociteS{S13} \nociteS{S14} \nociteS{S15} \nociteS{S16} \nociteS{S17} \nociteS{S18} \nociteS{S19} \nociteS{S20} \nociteS{S21} \nociteS{S22} \nociteS{S23} \nociteS{S24} \nociteS{S25} \nociteS{S26} \nociteS{S27} \nociteS{S28} \nociteS{S29} \nociteS{S30} \nociteS{S31} \nociteS{S32} \nociteS{S33} \nociteS{S34} \nociteS{S35} \nociteS{S36} \nociteS{S37} \nociteS{S38} \nociteS{S39} \nociteS{S40} \nociteS{S41} \nociteS{S42} \nociteS{S43} \nociteS{S44} \nociteS{S45} \nociteS{S46} \nociteS{S47} \nociteS{S48} \nociteS{S49} \nociteS{S50} \nociteS{S51} \nociteS{S52} \nociteS{S53} \nociteS{S54} \nociteS{S55} \nociteS{S56} \nociteS{S57} \nociteS{S58} \nociteS{S59} \nociteS{S60} \nociteS{S61} \nociteS{S62} \nociteS{S63} \nociteS{S64} \nociteS{S65} \nociteS{S66} \nociteS{S67} \nociteS{S68} \nociteS{S69} \nociteS{S70} \nociteS{S71} \nociteS{S72} \nociteS{S73} \nociteS{S74} \nociteS{S75} \nociteS{S76} \nociteS{S77} \nociteS{S78} \nociteS{S79} \nociteS{S80} \nociteS{S81} \nociteS{S82} \nociteS{S83} \nociteS{S84} \nociteS{S85} \nociteS{S86}
+
+%\section{Appendix}
+
+\bibliographystyleS{ieeetr} 
+\bibliographyS{bib_primarystudies_cleaned}
+
+\begin{table}[h]
+\centering
+\caption{Electronic sources searched in order, and the number of papers found and finally included.} \label{tab:sources}
+\begin{tabularx}{\columnwidth}{p{4cm} p{1.5cm} X}
+\hline
+Electronic sources & Papers & Selected papers  (+ earlier duplicates)\\ 
+\hline
+IEEE Xplore  & 80 & 25  \\
+ACM Digital Library & 87 & 12 (+ 1) \\
+Scopus  & 121 & 22 (+ 8)  \\
+Web of Science & 196 & 27 (+ 38) \\
+
+\hline
+Total & 484 & 86 \\ \hline
+\end{tabularx}
+\end{table}
+
+
+\begin{table*}[!htbp]
+\centering
+\caption{Accuracy range of Modular solutions described in studies when compared to Monolithic } \label{tab:accuracy}
+\begin{tabularx}{\textwidth}{p{.2cm} p{5.1cm}  p{4cm} p{4cm} p{1.5cm} p{1cm} }
+\hline
+
+ID & Task & Monolithic  performance &  Modular performance& Accuracy& Training \\ \hline
+
+S1 	&	 Time series 			&	 54.3\% 	&	 99.1\% 	&	 better 	&	 shorter 	\\
+S2 	&	 Pattern detection 			&	 59.8\% 	&	 60.89\% 	&	 better 	&	 NA 	\\
+S3 	&	 Pattern detection 			&	 88.31\% 	&	 93.6\% 	&	 better 	&	 shorter 	\\
+S4 	&	 Multi sensor classification 			&	 73.5\% 	&	 73.7\% 	&	 better 	&	 NA 	\\
+S5 	&	 Time series 			&	 80.75\% 	&	 80.46\% 	&	 mixed 	&	 shorter 	\\
+S7 	&	 Pattern detection 			&	 80.00\% 	&	 95.00\% 	&	 better 	&	 shorter 	\\
+S9 	&	 Image classification 			&	 82.00\% 	&	 85.00\% 	&	 better 	&	 NA 	\\
+S10 	&	 Time series 			&	 85.20\% 	&	 88.00\% 	&	 better 	&	 NA 	\\
+S12 	&	 Function generation 			&	 100.00\% 	&	 78.35\% 	&	 worse 	&	 NA 	\\
+S13 	&	 Image classification 			&	 91.0\% 	&	 93.5\% 	&	 better 	&	 NA 	\\
+S14 	&	 Model creation 			&	 92.00\% 	&	 94.00\% 	&	 better 	&	 shorter 	\\
+S16 	&	 Function generation 			&	 11.8\% 	&	 11.9\% 	&	 mixed 	&	 NA 	\\
+S17 	&	 Face detection 			&	 83.00\% 	&	 97.00\% 	&	 better 	&	 NA 	\\
+S19 	&	 Time series 			&	 80.00\% 	&	 81.00\% 	&	 better 	&	 shorter 	\\
+S20 	&	 Time series 			&	 96.5\% 	&	 98.00\% 	&	 better 	&	 shorter 	\\
+S21 	&	 Pattern detection 			&	 90.00\% 	&	 100.00\% 	&	 better 	&	 NA 	\\
+S22 	&	 Pattern detection 			&	 83.21\% 	&	 89.61\% 	&	 better 	&	 shorter 	\\
+S24 	&	 Data classification 			&	 71.1\% 	&	 74.8\% 	&	 better 	&	 shorter 	\\
+S25 	&	 Input classification 			&	 80.5\% 	&	 81.8\% 	&	 better 	&	 shorter 	\\
+S26 	&	 Input classification 			&	 79.23\% 	&	 80.02\% 	&	 better 	&	 NA 	\\
+S27 	&	 Pattern detection 			&	 92.6\% 	&	 93.3\% 	&	 better 	&	 shorter 	\\
+S28 	&	 Pattern detection 			&	 78.00\% 	&	 99.00\% 	&	 better 	&	 shorter 	\\
+S29 	&	 Input classification 			&	 59.1\% 	&	 67.8\% 	&	 better 	&	 NA 	\\
+S30 	&	 Image detection 			&	 99.8\% 	&	 99.9\% 	&	 better 	&	 longer  	\\
+S32 	&	 Text detection 			&	 89.1\% 	&	 94.2\% 	&	 better 	&	 shorter 	\\
+S34 	&	 Pattern detection 			&	 78.80\% 	&	 93.51\% 	&	 better 	&	 longer  	\\
+S36 	&	 Input classification 			&	 90.90\% 	&	 96.67\% 	&	 better 	&	 longer 	\\
+S37 	&	 Input classification 			&	 78.3\% 	&	 82.0\% 	&	 better 	&	 NA 	\\
+S38 	&	 Image Detection 			&	 18.99\% 	&	 74.68\% 	&	 mixed\textsuperscript{**} 	&	 longer 	\\
+S39 	&	 Face detection 			&	 50.00\% 	&	 100.00\% 	&	 better 	&	 shorter 	\\
+S40 	&	 Input modeling/classification 			&	 77.8\% 	&	 85.4\% 	&	 better 	&	 shorter 	\\
+S42 	&	 Image classification 			&	 95.00\% 	&	 80.00\% 	&	 worse 	&	 longer  	\\
+S46 	&	 Time series 			&	 70.40\% 	&	 75.40\% 	&	 better 	&	 shorter 	\\
+S47 	&	 Image Detection 			&	 97.67\% 	&	 97.47\% 	&	 mixed 	&	 longer  	\\
+S48 	&	 Input classification 			&	 97.1\% 	&	 88.4\% 	&	 worse 	&	 longer  	\\
+S52 	&	 Time series 			&	 97.98\% 	&	 99.95\% 	&	 better 	&	 longer  	\\
+S53 	&	 Image classification 			&	 85.00\% 	&	 95.00\% 	&	 better 	&	 NA 	\\
+S55 	&	 Image classification \& detection 			&	 99.25\% 	&	 97.85\% 	&	 worse 	&	 NA 	\\
+S58 	&	 Input modeling/classification 			&	 97.18\% 	&	 95.2\% 	&	 worse 	&	 NA 	\\
+S60 	&	 Image classification 			&	 98\% 	&	 100\% 	&	 better 	&	 longer  	\\
+S61 	&	 Image classification 			&	 97.54\% 97.88\%\textsuperscript{*} 	&	 96.49\% 95.08\% 	&	 worse 	&	 NA 	\\
+S62 	&	 Video classification 			&	 84.00\% 	&	 98.00\% 	&	 mixed 	&	 shorter 	\\
+S67 	&	 Image classification 			&	 55.00\% 	&	 85.00\% 	&	 better 	&	 shorter 	\\
+S68 	&	 Function generation 			&	 93.48\% 	&	 97.28\% 	&	 better 	&	 longer  	\\
+S72 	&	 Sensor detection 			&	 67.00\% 	&	 70.00\% 	&	 better 	&	 NA 	\\
+S73 	&	 Human recognition 			&	 99.00\% 	&	 97.13\% 	&	 worse 	&	 NA 	\\
+S74 	&	 Image classification 			&	 97.98\% 	&	 98.22\% 	&	 better 	&	 shorter 	\\
+S75 	&	 Human recognition 			&	 97.00\% 	&	 99.00\% 	&	 better 	&	 NA 	\\
+S78 	&	 Pattern detection 			&	 95.8\% 	&	 96.9\% 	&	 better 	&	 shorter 	\\
+S79 	&	 Function generation 			&	 87.48\% 	&	 86.65\% 	&	 worse 	&	 NA 	\\
+S80 	&	 Image classification \& detection 			&	 54.06\% 	&	 57.33\% 	&	 better 	&	 NA 	\\
+S81 	&	 Image classification 			&	 76.40\% 	&	 95.32\% 	&	 better 	&	 shorter 	\\
+S82 	&	 Face detection 			&	 97.52\%  99.99\%\textsuperscript{*} 	&	 93.4\%  97.49\% 	&	 worse 	&	 NA 	\\
+S83 	&	 Image classification 			&	 85\% - 95\%\textsuperscript{*} 	&	 85\% - 95\% 	&	 mixed 	&	 NA 	\\
+S84 	&	 Image classification 			&	 82\% - 54.8\%\textsuperscript{*} 	&	 91.21\% - 68.7\% 	&	 better 	&	 shorter 	\\
+S85 	&	 Sensor detection 			&	 100\% - 88.9\%\textsuperscript{*} 	&	 99\% - 86.4\% 	&	 mixed 	&	 shorter 	\\
+
+
+\hline
+\end{tabularx}
+
+\raggedright  
+\textsuperscript{*} Studies report the results of multiple experiments. \textsuperscript{**}Unusable due to too long execution time
+\end{table*}
+
+
+
+
+ 
+\begin{table*}[]
+\caption{Performance range of Modular solutions in Studies with alternate measurement methods or presentation of results} \label{tab:accuracy2}
+\begin{tabularx}{\textwidth}{p{.2cm} p{4.75cm}  X X p{1.5cm} p{1.5cm} }
+\hline
+
+ID & Task &  Monolithic performance &  Modular performance& Accuracy& Training \\ \hline
+
+
+S6 	&	 Image detection 			&	 Figure image had a weaker result 	&	 Figure image had a better result 	&	better	&	 NA 	\\
+S8 	&	 Time series 			&	 9\% deviation on change 	&	 7\% deviation on change 	&	better	&	 shorter 	\\
+S11 	&	 Function generation/Input detection 			&	 70mm error 	&	 33.4mm error 	&	better	&	 NA 	\\
+S15 	&	 Time series 			&	 0.458 Mhz RMSE 	&	 0.396 Mhz RMSE 	&	better	&	 NA 	\\
+S18 	&	 Complexity compression 			&	 9 neurons, O(121) 65 weights A comparison between MNN and non MNNs used to implement 16 logic functions. 	&	 5 neurons, 51 weights 10 switches, 1 inverter O(54) 	&	better	&	 NA 	\\
+S23 	&	 Multi sensor classification (traffic control) 			&	 27.18\% (link utilization) 	&	 83.59\% (link utilization) 	&	better	&	 shorter 	\\
+S31 	&	 Sensor detection 			&	 3800 iterations 5 targets/8 collisions 	&	 3800 iterations 14 targets / 14 collisions At the end the robot is able to reach targets without collision 	&	better	&	 NA 	\\
+S33 	&	 Input classification 			&	 0.002 MSE 	&	 0.0005 MSE 	&	better	&	 NA 	\\
+S35 	&	 Input classification 			&	 More memory used 	&	 Less memory used 	&	better	&	 shorter 	\\
+S41 	&	 Time series 			&	 0.3 pounds Fitness avg price distance from graph 	&	 0.01 pounds 	&	better	&	 NA 	\\
+S43 	&	 Multi sensor classification Pattern detection 			&	 ˜2\% 	&	 ˜2\% 	&	better	&	 NA 	\\
+S44 	&	 Multi sensor classification 			&	 4279.77 Average Survival Age Iterations 	&	 5537.19 Average Survival Age Iterations 	&	better	&	 NA 	\\
+S45 	&	 Input modeling/classification 			&	 56.6 W/m2 	&	 53.5 W/m2 	&	better	&	 NA 	\\
+S49 	&	 Time series 			&	 Larger deviation on table results 	&	 Very small deviation 	&	better	&	 NA 	\\
+S50 	&	 Multi sensor classification 			&	 32 fitness (mean Chebyshev distance from optimal path) 	&	 65 fitness 	&	better	&	 NA 	\\
+S51 	&	 Input classification 			&	 67.2W/m2 RMSE 	&	 64.4W/m2 RMSE 	&	better	&	 NA 	\\
+S54 	&	 Multi sensor classification 			&	 32 fitness (mean Chebyshev distance from optimal path) 	&	 68 fitness 	&	better	&	 NA 	\\
+S56 	&	 Input modeling/classification 			&	 2206 RMSE 	&	 1004 RMSE 	&	better	&	 NA 	\\
+S57 	&	 Input modeling/classification 			&	 Worse fit to field data in figures 	&	 Better fit to field data in figures 	&	better	&	 NA 	\\
+S59 	&	 Pattern classification 			&	 Fig shows similar or slightly weaker flight trajectory prediction when compared to the modular approach 	&	 Fig shows comparable or slightly better flight trajectory prediction as compared with the monolithic approaches 	&	better	&	 shorter 	\\
+S63 	&	 Function generation/Input detection 			&	 2 MPa, 0.2 \$/m3, and 20.7 cm training root mean square error (RMSE) 	&	 0.98MPa 0.27 \$/m3 0.35 cm training root mean square error (RMSE) 	&	better	&	 longer \newline (if parallel) 	\\
+S64 	&	 Function generation/Input detection 			&	 1.3087Mpa RMSE 	&	 1.646Mpa RMSE 	&	worse	&	 longer \newline (if  parallel) 	\\
+S65 	&	 Input modeling/classification 			&	 0.0143 MSE 	&	 0.0077 MSE 	&	better	&	 shorter 	\\
+S66 	&	 Input modeling/classification 			&	 0.0154 RMSE 	&	 0.0176 RMSE 	&	better	&	 NA 	\\
+S69 	&	 Input modeling/classification 			&	 Smaller economic and environmental cost in figure 	&	 Higher economic and environmental cost in figure 	&	better	&	 shorter 	\\
+S70 	&	 Input modeling/classification 			&	 99.3\% at 50\% value tolerance (lower tolerance better) 	&	 99.6\% at 40\% value tolerance 	&	better	&	 shorter 	\\
+S71 	&	 Multi sensor classification 			&	 16.014 (pacman score) 	&	 32.647 (pacman score) 	&	better	&	 NA 	\\
+S76 	&	 Image transformation 			&	 Unstable waveforms at bottleneck 	&	 Robust waveforms at bottleneck 	&	better	&	 NA 	\\
+S77 	&	 Input modeling/classification 			&	 Inversion illustrates good agreement with the ones published in the literatures. 	&	 Inversion illustrates good agreement with the ones published in the literatures. 	&	mixed	&	 NA 	\\
+S86 	&	 Function generation/Input detection 			&	 Performs slightly better on never repeating environments 	&	 Performs better on repeating environments 	&	 mixed 	&	 NA 	\\
+
+\hline
+\end{tabularx}
+\end{table*}
+
+
+\begin{table*}[h]
+\centering
+\caption{Comparison of MNN efficiency values vs. monolithic. The first value in brackets is MNN, second Monolithic in results with values. Studies missing these measurements were excluded from the list.} \label{tab:energy}
+\begin{tabularx}{\textwidth}{p{0.5cm} X X X   }\hline
+ID&Avg. execution time&Avg. memory&Avg. energy consumption\\ \hline
+
+S20 & Faster (general mention) & - & - \\
+S24 & Faster (general mention) & - & - \\
+S25 & Faster (11.919s vs 727.33s) & - & - \\
+S32 & Faster (437s vs 6298s) & - & - \\
+S35 & - & Smaller (general mention) & - \\
+S38 & Slower (0.18s vs 3.68s) & - & - \\
+S40 & Faster (180 times faster) & Smaller (general mention) & - \\
+S46 & Faster (general mention) & - & - \\
+S48 & Slower (127.2s vs 4.2s) & - & - \\
+S59 & Faster (300s vs 8500s) & - & - \\
+S69 & Faster (28h vs 333h)  & - & - \\
+S70 & Faster (693s vs 1760s) & - & - \\
+S74 & Faster (420s vs 3033s) & - & - \\
+S84 & Faster (0.358s vs 0.796s) & Smaller (3.512MB vs \textgreater 50MB) & Smaller (1.533J vs 3.168J) \\
+S85 & Faster (0.4ms vs 28.7ms)  & Smaller (2.0MB vs 17.1MB) & Smaller (1.8 mJ vs 79.2 mJ) \\
+\hline
+\end{tabularx}
+\footnotesize
+\raggedright 
+\end{table*}
+
+
+
+\end{document}
